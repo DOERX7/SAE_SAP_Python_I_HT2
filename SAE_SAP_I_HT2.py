@@ -63,7 +63,7 @@ try:
     '''
     DDL_Cursor = mydb.cursor()
     #No uso executemany porque no pasare una serie de parametros
-    #i don't use executemany because i will not use a serie of params
+    #i don't use executemany because i will not use a series of parameters
     for sentence in DDL_SCRIPT_ARR:
         DDL_Cursor.execute(sentence)
     mydb.commit()
